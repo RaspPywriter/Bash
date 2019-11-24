@@ -1,0 +1,19 @@
+Your task is to use for loops to display only odd natural numbers from 1 to 99.
+#!/bin/bash
+for i in {1..99..2}
+do
+  echo "$i"
+done
+
+Given two integers, X and Y, find their sum, difference, product, and quotient.
+
+Input Format
+
+Two lines containing one integer each ( X and Y, respectively).
+
+Constraints
+-100<=X, Y<100 Y!=0
+
+Output Format
+
+Four lines containing the sum, difference (X-Y), product, and quotient (X/Y), respectively.
