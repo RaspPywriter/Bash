@@ -17,3 +17,18 @@ Constraints
 Output Format
 
 Four lines containing the sum, difference (X-Y), product, and quotient (X/Y), respectively.
+#!/bin/bash
+read X
+read Y
+#if ["$X"<"-100"] || ["$Y" -g "100"] || ["$Y"=="0"]
+if [ $X -ge -100 ] || [ $Y -le 100 ] || [ $Y==0 ] || [ $X!=" " ] ! [ $Y==" " ] || [ $X=~^[0-9]+$ ]
+    then
+    sum=`echo "$X+$Y" |bc`
+    echo $sum
+    difference=`echo "$X- $Y" |bc`
+    echo $difference
+    product=`echo "$X*$Y" |bc`
+    echo $product
+    quotient=`echo "$X/$Y" |bc`
+    echo $quotient
+fi
