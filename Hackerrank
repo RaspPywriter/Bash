@@ -53,3 +53,18 @@ elif [ $X -gt $Y ]
 else
     echo "X is equal to Y"
 fi
+
+
+Given three integers (X, Y, and Z) representing the three sides of a triangle, identify whether the triangle is Scalene,
+Isosceles, or Equilateral.
+Input Format
+
+Three integers, each on a new line.
+
+Constraints
+1<=X, Y, Z <=1000
+Sum of any two sides will be greater than the third.
+
+Output Format
+
+One word: either "SCALENE" or "EQUILATERAL" or "ISOSCELES" (quotation marks excluded).
