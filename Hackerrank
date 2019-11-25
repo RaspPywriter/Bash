@@ -68,3 +68,33 @@ Sum of any two sides will be greater than the third.
 Output Format
 
 One word: either "SCALENE" or "EQUILATERAL" or "ISOSCELES" (quotation marks excluded).
+First try that works:
+#!/bin/bash
+read X
+read Y
+read Z
+if [ $X -ge 1 ] && [ $X -le 1000 ] && [ $Y -ge 1 ] && [ $Y -le 1000 ] && [ $Z -ge 1 ] && [ $Z -le 1000 ] && (( $X + $Y > $Z )) &&  (( $X + $Z > $Y )) &&  (( $Z + $Y > $X )) && [ $X == $Y ] && [ $X == $Z ]
+    then
+    echo "EQUILATERAL"
+elif [ $X -ge 1 ] && [ $X -le 1000 ] && [ $Y -ge 1 ] && [ $Y -le 1000 ] && [ $Z -ge 1 ] && [ $Z -le 1000 ] && (( $X + $Y > $Z )) &&  (( $X + $Z > $Y )) &&  (( $Z + $Y > $X )) && [ $X != $Y ] && [ $X != $Z ] && [ $Z != $Y ]
+    then
+    echo "SCALENE"
+elif [ $X -ge 1 ] && [ $X -le 1000 ] && [ $Y -ge 1 ] && [ $Y -le 1000 ] && [ $Z -ge 1 ] && [ $Z -le 1000 ] && (( $X + $Y > $Z )) &&  (( $X + $Z > $Y )) &&  (( $Z + $Y > $X ))
+    then
+    echo "ISOSCELES"
+fi
+Version 2 (slightly more condensed)
+#!/bin/bash
+read X
+read Y
+read Z
+if [ $X -ge 1 -a $X -le 1000 ] && [ $Y -ge 1 -a $Y -le 1000 ] && [ $Z -ge 1 -a $Z -le 1000 ] && (( $X + $Y > $Z )) &&  (( $X + $Z > $Y )) &&  (( $Z + $Y > $X )) && [ $X == $Y ] && [ $X == $Z ]
+    then
+    echo "EQUILATERAL"
+elif [ $X -ge 1 -a $X -le 1000 ] && [ $Y -ge 1 -a $Y -le 1000 ] && [ $Z -ge 1 -a $Z -le 1000 ] && (( $X + $Y > $Z )) &&  (( $X + $Z > $Y )) &&  (( $Z + $Y > $X )) && [ $X != $Y ] && [ $X != $Z ] && [ $Z != $Y ]
+    then
+    echo "SCALENE"
+elif [ $X -ge 1 -a $X -le 1000 ] && [ $Y -ge 1 -a $Y -le 1000 ] && [ $Z -ge 1 -a $Z -le 1000 ] && (( $X + $Y > $Z )) &&  (( $X + $Z > $Y )) &&  (( $Z + $Y > $X ))
+    then
+    echo "ISOSCELES"
+fi
