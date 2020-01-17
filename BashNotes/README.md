@@ -5,4 +5,5 @@
 | --- | --- |
 | pwd | prints the current path (print working directory) |
 | cd | change directory, use it to move to another folder/ location |
-| `git diff` | Show file differences that **haven't been** staged |
+| ls | Show all files in the current directory |
+
