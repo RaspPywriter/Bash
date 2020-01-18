@@ -1,0 +1,19 @@
+#These are commands that you can copy and paste and run in the terminal
+
+#count the number of files in a directory named documents
+find documents | wc -l
+
+#for the number of directories inside the documents folder
+find documents -type d | wc -l
+
+#get a count of text files in the documents folder
+find documents -type f -name "*.TXT" | wc -l
+
+#can also specify size
+find documents -type f -name "*.TXT" -size +5k | wc -l
+
+#return a count of documents that were modified at least 10000 minutes ago (approximately six days ago) in the documents folder
+find documents -cmin -10000 | wc -l
+
+
+
