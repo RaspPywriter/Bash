@@ -9,7 +9,30 @@
 | ls | Show all files in the current directory |
 | cd ~user | change to the home directory of user |
 | file | Determine the file type |
-| ls | List directory contents |
 | less | View file contents |
+| cp | copy |
+| mv | move | 
+| mkdir | make directory |
+| rm | remove files/directories |
+| ln | create hard and symbolic links |
 
 
+ls is a command to list all the files in the current directory, there are many options that you can add to ls to change what is returned
+
+| Option | Description |
+| --- | --- |
+| -a | Lists all files, even hidden files |
+| -A | Lists all files except current and parent directory |
+| -d -l | Shows information about the directory |
+| -h | Human readable not in bytes |
+| -l | Long form |
+| -r | Reverse alphabetical |
+| -t | Orders by modification time |
+
+Wildcards
+
+| Charater | Meaning |
+| --- | --- |
+| * | matches any characters |
+| ? | matches any single character |
+| [characters] | 
