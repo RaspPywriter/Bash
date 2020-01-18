@@ -15,6 +15,11 @@
 | mkdir | make directory |
 | rm | remove files/directories |
 | ln | create hard and symbolic links |
+| locate | Find files by name |
+| find | search for files in a directory hierarchy |
+| xargs | build and execute command lines from standard input |
+| touch | Change file times |
+
 
 
 ls is a command to list all the files in the current directory, there are many options that you can add to ls to change what is returned
