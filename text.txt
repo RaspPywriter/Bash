@@ -1,0 +1,9 @@
+#Text processing using Bash
+#Create a text file with a sample line of text - type the following exactly as is and then press ctrl + d
+cat > testFile.txt
+this is my test file
+
+#sort multiple files into one sorted file
+sort list1.txt list2.txt list3.txt > finalSortedList.txt
+
+
