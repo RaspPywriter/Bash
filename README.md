@@ -1,1 +1,1 @@
-**Working through Bash Exercises**
+**Working through Bash and PowerShell Exercises**
